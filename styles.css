@@ -64,16 +64,28 @@ body {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 32px;
   align-items: center;
+  text-align: center;
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  max-width: 720px;
+}
+
+.status-pill {
+  align-self: center;
+  border-radius: 999px;
+  padding: 6px 16px;
+  border: 1px solid var(--border-light);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .eyebrow {
@@ -84,7 +96,7 @@ body {
 }
 
 .hero h1 {
-  font-size: 40px;
+  font-size: 44px;
   line-height: 1.1;
   letter-spacing: -0.6px;
 }
@@ -95,48 +107,63 @@ body {
   line-height: 1.6;
 }
 
-.search-panel {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 12px;
-  background: var(--surface-muted);
-  padding: 16px;
-  border-radius: 16px;
-}
-
-.search-input {
+.search-hero {
+  width: 100%;
+  max-width: 860px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  font-size: 12px;
-  color: var(--text-secondary);
+  gap: 16px;
+  align-items: center;
 }
 
-.search-input input {
+.search-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.search-bar {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #111111;
+  border-radius: 999px;
+  display: grid;
+  grid-template-columns: 1.2fr auto 1fr auto;
+  align-items: center;
+  padding: 8px 12px 8px 20px;
+  gap: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+.search-bar input {
   border: none;
-  background: transparent;
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--text-primary);
+  font-size: 18px;
   outline: none;
+  background: transparent;
+  color: var(--text-primary);
+}
+
+.divider {
+  width: 1px;
+  height: 28px;
+  background: var(--border-light);
 }
 
 .primary-button {
   border: none;
   background: var(--accent);
   color: white;
-  padding: 14px 20px;
+  padding: 14px 24px;
   border-radius: 999px;
   font-size: 14px;
   cursor: pointer;
   height: fit-content;
-  align-self: end;
 }
 
 .quick-filters {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  justify-content: center;
 }
 
 .filter-pill {
@@ -153,63 +180,37 @@ body {
   background: #f0f0f0;
 }
 
-.hero-card {
-  border: 1px solid var(--border-light);
-  border-radius: 24px;
+.waitlist {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
   padding: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  background: var(--surface);
-}
-
-.hero-card-header {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.card-label {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: var(--text-secondary);
-}
-
-.card-count {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.hero-card-body {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-  gap: 12px;
-}
-
-.metric {
+  border-radius: 20px;
   background: var(--surface-muted);
-  border-radius: 16px;
-  padding: 16px;
+}
+
+.waitlist h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.waitlist p {
+  color: var(--text-secondary);
+}
+
+.waitlist-form {
   display: flex;
-  flex-direction: column;
-  gap: 6px;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
-.metric-value {
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.metric-label {
-  font-size: 12px;
-  color: var(--text-secondary);
-}
-
-.hero-card-footer {
+.waitlist-form input {
+  border: 1px solid var(--border-light);
+  border-radius: 999px;
+  padding: 12px 18px;
+  min-width: 240px;
   font-size: 14px;
-  color: var(--text-secondary);
-  line-height: 1.5;
 }
 
 .controls {
@@ -326,6 +327,23 @@ body {
   flex-wrap: wrap;
 }
 
+@media (max-width: 900px) {
+  .search-bar {
+    grid-template-columns: 1fr;
+    border-radius: 24px;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .primary-button {
+    width: 100%;
+  }
+}
+
 @media (max-width: 720px) {
   .page {
     padding: 32px 20px 48px;
@@ -341,9 +359,17 @@ body {
     font-size: 32px;
   }
 
-  .primary-button {
+  .waitlist {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .waitlist-form {
     width: 100%;
-    justify-self: stretch;
+  }
+
+  .waitlist-form input {
+    width: 100%;
   }
 
   .site-footer {

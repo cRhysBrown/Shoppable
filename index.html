@@ -25,22 +25,22 @@
       <main>
         <section class="hero">
           <div class="hero-content">
+            <span class="status-pill">Pre-prototype</span>
             <p class="eyebrow">Local Furniture Search Engine</p>
-            <h1>Find every sofa nearby in seconds.</h1>
+            <h1>Find furniture in stock near you — instantly.</h1>
             <p class="subhead">
-              Shoppable brings together live inventory from trusted retailers so
-              you can compare, filter, and shop without hopping between sites.
+              Shoppable surfaces real-time inventory from every nearby retailer so
+              you can compare, filter, and shop in one place.
             </p>
-            <div class="search-panel">
-              <div class="search-input">
-                <span>Search</span>
-                <input type="text" value="Sofa" aria-label="Search furniture" />
-              </div>
-              <div class="search-input">
-                <span>Location</span>
-                <input type="text" value="Austin, TX" aria-label="Location" />
-              </div>
-              <button class="primary-button">Show results</button>
+          </div>
+
+          <div class="search-hero">
+            <p class="search-title">Find Furniture Instantly</p>
+            <div class="search-bar">
+              <input type="text" value="Sofa" aria-label="Search furniture" />
+              <div class="divider"></div>
+              <input type="text" value="Brisbane" aria-label="Location" />
+              <button class="primary-button">Search</button>
             </div>
             <div class="quick-filters">
               <span class="filter-pill active">Nearby</span>
@@ -49,29 +49,17 @@
               <span class="filter-pill">Delivery this week</span>
             </div>
           </div>
-          <div class="hero-card">
-            <div class="hero-card-header">
-              <p class="card-label">Live inventory snapshot</p>
-              <p class="card-count">128 sofas within 25 miles</p>
-            </div>
-            <div class="hero-card-body">
-              <div class="metric">
-                <span class="metric-value">24</span>
-                <span class="metric-label">Retailers</span>
-              </div>
-              <div class="metric">
-                <span class="metric-value">5h</span>
-                <span class="metric-label">Avg delivery</span>
-              </div>
-              <div class="metric">
-                <span class="metric-value">$899</span>
-                <span class="metric-label">Median price</span>
-              </div>
-            </div>
-            <div class="hero-card-footer">
-              <p>Compare sofas, sectionals, sleepers, and loveseats from one place.</p>
-            </div>
+        </section>
+
+        <section class="waitlist">
+          <div>
+            <h2>Join the waitlist</h2>
+            <p>Be first to know when the Shoppable prototype is ready.</p>
           </div>
+          <form class="waitlist-form">
+            <input type="email" placeholder="you@email.com" aria-label="Email" />
+            <button class="primary-button" type="submit">Join waitlist</button>
+          </form>
         </section>
 
         <section class="controls">
