@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoppable — Local Furniture Search</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="logo-group">
+          <div class="logo">Shoppable</div>
+          <span class="status-pill">Pre-prototype</span>
+        </div>
+        <nav class="nav-links">
+          <a href="#">Browse</a>
+          <a href="#">Retailers</a>
+          <a href="#">How it works</a>
+          <button class="ghost-button">Sign in</button>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-content">
+            <p class="eyebrow">Local Furniture Search Engine</p>
+            <p class="subhead">
+              Shoppable surfaces real-time inventory from every nearby retailer so
+              you can compare, filter, and shop in one place.
+            </p>
+          </div>
+
+          <div class="search-hero">
+            <div class="waitlist">
+              <div>
+                <h2>Join the waitlist</h2>
+                <p>Be first to know when the Shoppable prototype is ready.</p>
+              </div>
+              <form class="waitlist-form">
+                <input type="email" placeholder="you@email.com" aria-label="Email" />
+                <button class="primary-button" type="submit">Join waitlist</button>
+              </form>
+            </div>
+            <h1 class="search-title">Find Furniture Instantly.</h1>
+            <div class="search-bar">
+              <input
+                type="text"
+                placeholder="search shoppable"
+                aria-label="Search furniture"
+              />
+              <div class="divider"></div>
+              <input type="text" value="Brisbane" aria-label="Location" />
+              <button class="primary-button">Search</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="controls">
+          <div class="control-group">
+            <p class="control-title">Refine results</p>
+            <div class="chip-row">
+              <button class="chip">Category ▾</button>
+              <button class="chip">Price ▾</button>
+              <button class="chip">Material ▾</button>
+              <button class="chip">Color ▾</button>
+              <button class="chip">Delivery ▾</button>
+            </div>
+          </div>
+          <div class="control-group">
+            <p class="control-title">Sort by</p>
+            <button class="chip">Best match ▾</button>
+          </div>
+        </section>
+
+        <section class="catalogue">
+          <article class="product-card">
+            <img
+              class="product-image"
+              src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='260'><rect width='100%25' height='100%25' fill='%23f2f2f2'/><text x='50%25' y='50%25' fill='%23999999' font-size='20' font-family='Inter, Arial' dominant-baseline='middle' text-anchor='middle'>Furniture</text></svg>"
+              alt="Luna Modular Sofa"
+            />
+            <div class="product-info">
+              <div>
+                <p class="product-title">Luna Modular Sofa</p>
+                <p class="product-meta">Brightline Home · 2.3 mi</p>
+              </div>
+              <div class="product-price">$1,050</div>
+            </div>
+          </article>
+          <article class="product-card">
+            <img
+              class="product-image"
+              src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='260'><rect width='100%25' height='100%25' fill='%23f2f2f2'/><text x='50%25' y='50%25' fill='%23999999' font-size='20' font-family='Inter, Arial' dominant-baseline='middle' text-anchor='middle'>Furniture</text></svg>"
+              alt="Weston Leather Loveseat"
+            />
+            <div class="product-info">
+              <div>
+                <p class="product-title">Weston Leather Loveseat</p>
+                <p class="product-meta">Modern Market · 4.1 mi</p>
+              </div>
+              <div class="product-price">$890</div>
+            </div>
+          </article>
+          <article class="product-card">
+            <img
+              class="product-image"
+              src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='260'><rect width='100%25' height='100%25' fill='%23f2f2f2'/><text x='50%25' y='50%25' fill='%23999999' font-size='20' font-family='Inter, Arial' dominant-baseline='middle' text-anchor='middle'>Furniture</text></svg>"
+              alt="Harbor Sleeper"
+            />
+            <div class="product-info">
+              <div>
+                <p class="product-title">Harbor Sleeper</p>
+                <p class="product-meta">Assembly Studio · 1.1 mi</p>
+              </div>
+              <div class="product-price">$1,420</div>
+            </div>
+          </article>
+          <article class="product-card">
+            <img
+              class="product-image"
+              src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='260'><rect width='100%25' height='100%25' fill='%23f2f2f2'/><text x='50%25' y='50%25' fill='%23999999' font-size='20' font-family='Inter, Arial' dominant-baseline='middle' text-anchor='middle'>Furniture</text></svg>"
+              alt="Cove Linen Sectional"
+            />
+            <div class="product-info">
+              <div>
+                <p class="product-title">Cove Linen Sectional</p>
+                <p class="product-meta">Studio & Co. · 3.7 mi</p>
+              </div>
+              <div class="product-price">$1,980</div>
+            </div>
+          </article>
+          <article class="product-card">
+            <img
+              class="product-image"
+              src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='260'><rect width='100%25' height='100%25' fill='%23f2f2f2'/><text x='50%25' y='50%25' fill='%23999999' font-size='20' font-family='Inter, Arial' dominant-baseline='middle' text-anchor='middle'>Furniture</text></svg>"
+              alt="Marin Lounge Chair"
+            />
+            <div class="product-info">
+              <div>
+                <p class="product-title">Marin Lounge Chair</p>
+                <p class="product-meta">Field Supply · 2.9 mi</p>
+              </div>
+              <div class="product-price">$520</div>
+            </div>
+          </article>
+          <article class="product-card">
+            <img
+              class="product-image"
+              src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='260'><rect width='100%25' height='100%25' fill='%23f2f2f2'/><text x='50%25' y='50%25' fill='%23999999' font-size='20' font-family='Inter, Arial' dominant-baseline='middle' text-anchor='middle'>Furniture</text></svg>"
+              alt="Sloane Velvet Sofa"
+            />
+            <div class="product-info">
+              <div>
+                <p class="product-title">Sloane Velvet Sofa</p>
+                <p class="product-meta">Urban Loft · 5.0 mi</p>
+              </div>
+              <div class="product-price">$1,240</div>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Shoppable · Launching your local furniture finder</p>
+        <button class="primary-button">Request early access</button>
+      </footer>
+    </div>
+  </body>
+</html>
