@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoppable — Local Furniture Search</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="logo">Shoppable</div>
+        <nav class="nav-links">
+          <a href="#">Browse</a>
+          <a href="#">Retailers</a>
+          <a href="#">How it works</a>
+          <button class="ghost-button">Sign in</button>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-content">
+            <p class="eyebrow">Local Furniture Search Engine</p>
+            <h1>Find every sofa nearby in seconds.</h1>
+            <p class="subhead">
+              Shoppable brings together live inventory from trusted retailers so
+              you can compare, filter, and shop without hopping between sites.
+            </p>
+            <div class="search-panel">
+              <div class="search-input">
+                <span>Search</span>
+                <input type="text" value="Sofa" aria-label="Search furniture" />
+              </div>
+              <div class="search-input">
+                <span>Location</span>
+                <input type="text" value="Austin, TX" aria-label="Location" />
+              </div>
+              <button class="primary-button">Show results</button>
+            </div>
+            <div class="quick-filters">
+              <span class="filter-pill active">Nearby</span>
+              <span class="filter-pill">In stock</span>
+              <span class="filter-pill">Under $1,000</span>
+              <span class="filter-pill">Delivery this week</span>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-header">
+              <p class="card-label">Live inventory snapshot</p>
+              <p class="card-count">128 sofas within 25 miles</p>
+            </div>
+            <div class="hero-card-body">
+              <div class="metric">
+                <span class="metric-value">24</span>
+                <span class="metric-label">Retailers</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">5h</span>
+                <span class="metric-label">Avg delivery</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">$899</span>
+                <span class="metric-label">Median price</span>
+              </div>
+            </div>
+            <div class="hero-card-footer">
+              <p>Compare sofas, sectionals, sleepers, and loveseats from one place.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="controls">
+          <div class="control-group">
+            <p class="control-title">Refine results</p>
+            <div class="chip-row">
+              <button class="chip">Category ▾</button>
+              <button class="chip">Price ▾</button>
+              <button class="chip">Material ▾</button>
+              <button class="chip">Color ▾</button>
+              <button class="chip">Delivery ▾</button>
+            </div>
+          </div>
+          <div class="control-group">
+            <p class="control-title">Sort by</p>
+            <button class="chip">Best match ▾</button>
+          </div>
+        </section>
+
+        <section class="catalogue">
+          <article class="product-card">
+            <div class="product-image gradient-1"></div>
+            <div class="product-info">
+              <div>
+                <p class="product-title">Luna Modular Sofa</p>
+                <p class="product-meta">Brightline Home · 2.3 mi</p>
+              </div>
+              <div class="product-price">$1,050</div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-image gradient-2"></div>
+            <div class="product-info">
+              <div>
+                <p class="product-title">Weston Leather Loveseat</p>
+                <p class="product-meta">Modern Market · 4.1 mi</p>
+              </div>
+              <div class="product-price">$890</div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-image gradient-3"></div>
+            <div class="product-info">
+              <div>
+                <p class="product-title">Harbor Sleeper</p>
+                <p class="product-meta">Assembly Studio · 1.1 mi</p>
+              </div>
+              <div class="product-price">$1,420</div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-image gradient-4"></div>
+            <div class="product-info">
+              <div>
+                <p class="product-title">Cove Linen Sectional</p>
+                <p class="product-meta">Studio & Co. · 3.7 mi</p>
+              </div>
+              <div class="product-price">$1,980</div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-image gradient-5"></div>
+            <div class="product-info">
+              <div>
+                <p class="product-title">Marin Lounge Chair</p>
+                <p class="product-meta">Field Supply · 2.9 mi</p>
+              </div>
+              <div class="product-price">$520</div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-image gradient-6"></div>
+            <div class="product-info">
+              <div>
+                <p class="product-title">Sloane Velvet Sofa</p>
+                <p class="product-meta">Urban Loft · 5.0 mi</p>
+              </div>
+              <div class="product-price">$1,240</div>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Shoppable · Launching your local furniture finder</p>
+        <button class="primary-button">Request early access</button>
+      </footer>
+    </div>
+  </body>
+</html>
